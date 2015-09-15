@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello React!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/foundation.css') }}">
+    <script src="{{ url_for('static', filename='build/react.js') }}"></script>
+    <script src="{{ url_for('static', filename='build/browser.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vendor/modernizr.js') }}"></script>
+    <style>
+      html,body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #3faead;
+      }
+      #content {
+        height: 100%;
+      }
+      #app {
+        height: 100%;
+      }
+      #content .left-bar {
+        height: 100%;
+        float: left;
+        width: 255px;
+      }
+      #content .right-bar {
+        height: 100%;
+        margin-left: 255px;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .clearfix:after {
+        content: " ";
+        height: 0;
+        display: block;
+        clear: both;
+      }
+      #table-search-tab li a {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .left-bar {
+        background: #3faead;
+      }
+      .button-group.even-5 > li {
+        margin: 0px !important;
+      }
+      .inner-search-box {
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .button.x-small {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .button.secondary.selected {
+        background-color: #3faead;
+      }
+      #timetable {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      #timetable .time {
+        width: 70px;
+        text-align: center;
+      }
+      #timetable th {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content" class="clearfix">
+    </div>
+    <script type="text/babel" src="{{ url_for('static', filename='build/index_controller.js') }}">
+    </script>
+    <script src="{{ url_for('static', filename='js/vendor/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/foundation.min.js') }}"></script>
+  </body>
+</html>
+
